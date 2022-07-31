@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap");
+* {
+  font-size: 10px;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.main {
+  margin: 0 auto;
+  display: flex;
+  width: 35rem;
+  margin-top: 15rem;
+}
+#img {
+  background-image: url("image-product-desktop.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 16.75rem;
+  height: 25rem;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.right {
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 25rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.name {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  font-size: 7px;
+  color: hsl(228, 12%, 48%);
+}
+
+.title,
+p {
+  font-family: "Fraunces", serif;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+
+.name2 {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+.price {
+  font-size: 1.5rem;
+  color: hsl(158, 36%, 37%);
+}
+.del-price {
+  text-align: center;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+.items button {
+  margin-top: 1.5rem;
+  background-color: hsl(158, 35%, 22%);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 1.75rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 376px) {
+  .main {
+    flex-direction: column;
+  }
+  #img {
+    background-image: url("image-product-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .right {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
